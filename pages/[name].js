@@ -1,11 +1,9 @@
-import React from 'react'
-import {useRouter} from 'next/router'
+import React from 'react';
+import {useRouter} from 'next/router';
 
 export default function Name() {
-    const router = useRouter()
-    const {name} = router.query
+  const router = useRouter();
+  const {name} = router.query;
 
-    return (
-        <h1>Welcome {name}</h1>
-    )
+  return <h1>Welcome {name}</h1>;
 }
